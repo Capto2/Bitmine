@@ -1,0 +1,112 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ text-decoration: none;
+ list-style: none;
+ font-family: 'Poppins', sans-serif;
+}
+:root{
+  --bg-color: rgb(53, 52, 52);
+  --text-color: #fff;
+  --main-color: #29fd53;
+}
+body{
+  min-height: 100vh;
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+header{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent;
+  padding: 28px 12%;
+  transition: all .50s ease;
+}
+span.logo{
+  display: flex;
+  color: var(--main-color);
+  margin-right: 3px;
+}
+span.logo img{
+  width: 80%;
+}
+header ul{
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  font-family: Ubuntu, Arial, Helvetica Neue;
+}
+header ul li a{
+  text-transform: capitalize;
+  color: #A1ABBD;
+  font-weight: 500;
+  font-size: 1.1rem;
+  padding:  5px 0;
+  margin: 0px 10px;
+  transition: all .50s ease;
+  letter-spacing: -0.016px;
+}
+header ul li a:hover{
+  color: #e9c912;
+  border-bottom: 3px solid #e9c912;
+}
+span.menu{
+  display: none;
+  color: var(--text-color);
+  font-size: 35px;
+  cursor: pointer;
+  z-index: 10001;
+}
+
+/* responsiveness */
+@media (max-width: 1280px){
+  header{
+    padding: 14px 2%;
+    transition: .2s;
+  }
+  header ul.navbar li a{
+    padding: 5px 0;
+    margin: 0px 20px;
+  }
+}
+@media (max-width: 900px){
+  span.menu{
+    display: block;
+  }
+  header ul.navbar{
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    width: 270px;
+    height: 29vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 10px;
+    transition: all .50s ease;
+  }
+  header ul.navbar li a{
+    display: block;
+    margin: 12px 0;
+    padding: 0 25px;
+    transition: all .50s ease;
+  }
+  header ul.navbar li a:hover{
+    color: var(--text-color);
+    border: 0;
+    transform: translateY(10px);
+  }
+  header ul.navbar li a:active{
+    color: #e9c912;
+  }
+  .mavbar .open{
+    right: 2%;
+  }
+}
