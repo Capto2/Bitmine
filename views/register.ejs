@@ -1,0 +1,20 @@
+<%- include("partials/sign-header"); -%>
+    <main>
+        <div class="header">
+            <h1>register</h1>
+            <p>Start bitcoin mining today</p>
+        </div>
+        <form action="/register" method="post">
+            <p>Sign up with credentials</p>
+            <div class="form">
+                <div class="input"><span class="material-symbols-sharp">mail</span><input type="email" name="email" id="email" />
+                </div>
+                <div class="input"><span class="material-symbols-sharp">key</span><input type="password" name="password" id="password" />
+                </div>
+                <div class="input"><span class="material-symbols-sharp">key</span><input type="password" name="confirmpassword" id="confirmpassword" />
+                </div>
+                <button type="submit">Sign - up</button>
+            </div>
+        </form>
+    </main>
+    <%- include("partials/sign-footer"); -%>

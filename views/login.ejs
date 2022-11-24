@@ -1,0 +1,20 @@
+<%- include("partials/sign-header"); -%>
+    <main>
+        <div class="header">
+            <h1>login</h1>
+        </div>
+        <form action="/login" method="post">
+            <p>Sign in with credentials</p>
+            <div class="form">
+                <div class="input"><span class="material-symbols-sharp">mail</span><input type="email" name="email" id="email" />
+                </div>
+                <div class="input"><span class="material-symbols-sharp">key</span><input type="password" name="password" id="password" />
+                </div>
+                <button type="submit">Login</button>
+            </div>
+            <div class="a-tags">
+                <a href="/forgotten-password">Forgotten password?</a> <a href="/register">Create new account</a>
+            </div>
+        </form>
+    </main>
+    <%- include("partials/sign-footer"); -%>

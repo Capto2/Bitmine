@@ -15,10 +15,11 @@
 }
 body {
   min-height: 100vh;
-  background-color: black;
+  background-color: #000000;
   background-image: url(/images/black-and-white-polka-dot-textile.jpg);
   background-repeat: repeat;
   background-size: cover;
+  background-image: url(/images/bg-2.png);
 }
 nav {
   display: flex;
@@ -551,12 +552,13 @@ footer {
   font-weight: 400;
   letter-spacing: -0.016px;
   margin: 0px 0px 24px;
+  padding: 5rem 2rem;
 }
-footer img{
-    width: 5rem;
-    height: 5rem;
-    text-align: center;
-    margin: 3rem
+footer img {
+  width: 5rem;
+  height: 5rem;
+  text-align: center;
+  margin: 3rem;
 }
 footer span {
   line-height: 22.82px;
@@ -567,4 +569,43 @@ footer span {
   color: var(--white-color);
   margin: 2rem;
   display: block;
+}
+
+/* About us tag */
+div.about-section {
+  background-color: black;
+  height: 100vh;
+  text-align: center;
+  color: #a1abbd;
+  line-height: 26.08px;
+  vertical-align: baseline;
+  letter-spacing: -0.016px;
+  padding: 5rem;
+}
+div.about-section h2 {
+  line-height: 78px;
+  padding-top: 9rem;
+  vertical-align: baseline;
+  letter-spacing: -1.2px;
+  word-spacing: 0px;
+  font-size: 60px;
+  text-align: center;
+  font-weight: 400;
+}
+div.about-section span {
+  top: 24rem;
+  font-size: 22px;
+  font-weight: 400;
+  text-align: start;
+  text-transform: capitalize;
+  color: var(--gold-color);
+  line-height: 35.2px;
+  vertical-align: baseline;
+  letter-spacing: 5px;
+  word-spacing: 0px;
+  margin: 0px 0px 10px;
+  padding-left: 50px;
+}
+div.about-section p{
+  padding: 2rem;
 }
